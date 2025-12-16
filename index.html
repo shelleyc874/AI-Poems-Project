@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
     <title>Shelley's Funny AI Poem Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the poem"
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          There was a young man from Nantucket.
-          <br />
-          Who went down a well in a bucket;
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
